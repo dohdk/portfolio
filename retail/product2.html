@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+         <meta charset = "UTF-8">
+        <title>GongLine: Accessories</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel ="stylesheet" href="stylesheet.css">
+       
+        
+        <style>
+            body {
+                margin: 0;
+            }  
+            .container {
+                display:grid;
+                grid-template-columns:repeat(12, 1fr); 
+                grid-auto-rows:minmax(30px, auto);
+                margin:0 auto;
+                max-width:1500px;
+            }
+            .logo {
+                grid-column:1/13;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #c69c6d;
+            }
+            nav {
+                grid-column:1/13;
+            }
+            nav ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                display: flex;
+                background-color: #f5f5dc;
+                color:black;
+            }
+            nav li {
+                float: right;
+            }
+            nav li a {
+                display: inline-block;
+                color: #000000;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                transition: .5s ease;
+            }
+            nav li a:hover{
+                text-shadow: 0 2px 2px rgba(0,0,0,0.2);
+                color: #bb2528;
+            }
+            .cart{
+                grid-column:1/13;
+                display: inline-block;
+                border: none;
+                background-color: #000000;
+                color: white;
+                font-size: 20px;
+                text-align: center;
+                transition: .5s ease;
+                padding-top: 13px;
+                padding-bottom: 13px;
+                opacity: 1;
+            }
+            .cart:hover {
+                opacity: 0.7;
+            }
+            .image-cover {
+                grid-column:1/13;
+                opacity: 1;
+                backface-visibility: hidden;
+                transition: .5s ease;
+            }
+            .image-cover:hover {
+                opacity: 0.8;
+            }
+            .seperator {
+                grid-column:1/13;
+                background-color: #bb2528;
+            }
+            .product {
+                box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                background-color: white;
+            }
+            .price {
+                color: grey;
+                font-size: 22px;
+            }
+            button {
+                border: none;
+                outline: 0;
+                padding: 12px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+                transition: .5s ease;
+            }
+            button:hover {
+                opacity: 0.7;
+            }
+             .product1 {
+                    grid-column: 1/7;
+                }
+                .product2 {
+                    grid-column: 7/13;
+                }
+                .product3 {
+                    grid-column: 1/7;
+                }
+                .product4 {
+                    grid-column: 7/13;
+                }
+                .product5 {
+                    grid-column: 1/7;
+                }
+                .product6 {
+                    grid-column: 7/13;
+                }
+            .help{
+                grid-column:1/13;
+                background-color: #f5f5dc;
+            }
+            .social{
+                grid-column:1/13;
+                background-color: #f5f5dc;
+            }
+            footer {
+                grid-column:1/13;
+                background-color:#f5f5dc;
+            }
+            
+            a:link, a:visited {
+                color: #333333;
+                text-decoration: none;
+            }
+            a:hover {
+                color: #bb2528;
+            }
+            
+            @media only screen and (min-width:600px) {
+                nav {
+                    grid-column: 1/11;
+                }
+                .cart {
+                    grid-column: 11/13;
+                }
+                .product1 {
+                    grid-column: 1/5;
+                }
+                .product2 {
+                    grid-column: 5/9;
+                }
+                .product3 {
+                    grid-column: 9/13;
+                }
+                .product4 {
+                    grid-column: 1/5;
+                }
+                .product5 {
+                    grid-column: 5/9;
+                }
+                .product6 {
+                    grid-column: 9/13;
+                }
+                .help {
+                    grid-column: 1/7;
+                }
+                .social {
+                    grid-column: 7/13;
+                }
+            }
+            
+            @media only screen and (min-width:900px) {
+                nav {
+                    grid-column: 1/11;
+                }
+                .cart {
+                    grid-column: 11/13;
+                }
+                .product1 {
+                    grid-column: 1/5;
+                }
+                .product2 {
+                    grid-column: 5/9;
+                }
+                .product3 {
+                    grid-column: 9/13;
+                }
+                .product4 {
+                    grid-column: 1/5;
+                }
+                .product5 {
+                    grid-column: 5/9;
+                }
+                .product6 {
+                    grid-column: 9/13;
+                }
+                .help {
+                    grid-column: 1/7;
+                }
+                .social {
+                    grid-column: 7/13;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+          <div class="logo">
+              <a href="index.html">
+            <img src="images/logo%203.jpg" alt="Logo">
+              </a>
+          </div>
+          <nav>
+            <ul>
+                <li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="product1.html"><b>Products</b></a></li>
+                <li><a href="product2.html"><b>Accessories</b></a></li>
+            </ul> 
+          </nav>
+         <div class="cart" style="height:20px; font-family:'Helvetica', sans-serif;">
+              Cart <i style="font-size:16px;color:white"></i>
+          </div>
+          <div class ="image-cover">
+             <img src="images/p2cover%204.jpg" alt="Cover">
+          </div>
+          <div class="seperator"><h5>GongLine Accessories</h5></div>
+            
+          <div class="product1">
+            <div class="product">
+            <img src="images/new%20accessory%20test%202.jpg" alt="Necklace" style="width:100%">
+            <h2>GongLine 2-Pack Necklace</h2>
+            <p class="price">$15.99</p>
+            <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+            
+          <div class="product2">
+            <div class="product">
+            <img src="images/accessory%20test%201.jpg" alt="Holder" style="width:100%">
+            <h2>GongLine Carabiner Holder</h2>
+            <p class="price">$9.99</p>
+            <p><button>Add to Cart</button></p>
+            </div> 
+          </div>
+            
+          <div class="product3">
+            <div class="product">
+            <img src="images/accessory%20test%205.jpg" alt="Strings" style="width:100%">
+            <h2>GongLine Extra String Pack</h2>
+            <p class="price">$9.99</p>
+            <p><button>Add to Cart</button></p>
+            </div> 
+          </div>
+            
+          <div class="product4">
+            <div class="product">
+            <img src="images/new%20accessory%20test%207.jpg" alt="Bag" style="width:100%">
+            <h2>GongLine Carrying Pouch</h2>
+            <p class="price">$15.99</p>
+            <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+            
+          <div class="product5">
+            <div class="product">
+            <img src="images/new%20accessory%20test%204.jpg" alt="Wall Hold" style="width:100%">
+            <h2>GongLine Wooden Wall Hook</h2>
+            <p class="price">$29.99</p>
+            <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+            
+          <div class="product6">
+            <div class="product">
+            <img src="images/new%20accessory%20test%203.jpg" alt="Keychain" style="width:100%">
+            <h2>GongLine Figure Keychain</h2>
+            <p class="price">$6.99</p>
+            <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+            
+          <div class="help">
+              <h2><u>Customer Support</u></h2>
+              <h3 class="email"><a href="mailto:dohdk@dukes.jmu.edu" target="_blank">Email Us</a></h3>
+              <p><b> Call us for any questions <br>
+                  Our Hours: Mon-Fri, 9am-9pm PST</b></p>
+              <p><b>Contact: (804) 432-5445</b></p>
+          </div>
+          <div class="social">
+              <h2><u>Social Media</u></h2>
+              <p><b>Facebook</b></p>
+              <p><b>Instagram</b></p>
+              <p><b>Snapchat</b></p>
+              <p><b>TikTok</b></p>
+          </div>
+          <footer>
+            <p> Created By: Daniel Doh | Copyright &#169; 2021 GongLine. All Rights Reserved. | <a href="policy.html">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+          </footer>
+        </div>
+    </body>
+</html>
